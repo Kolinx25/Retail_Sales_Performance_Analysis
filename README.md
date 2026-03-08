@@ -1,0 +1,79 @@
+#  Retail Sales Performance Analysis
+### SQL Project | Northwind Traders Dataset
+
+---
+
+##  Business Problem
+
+A fictional sales manager wants to understand which customers, products, and employees are driving revenue and identify where the business may be losing money.
+
+This project uses SQL to answer **10 real business questions** across a relational database of 6 tables, built entirely from scratch in SQL Server.
+
+---
+
+##  Dataset
+
+**Source:** [Maven Analytics — Northwind Traders](https://www.mavenanalytics.io/data-playground) *(free, publicly available)*
+
+Northwind Traders is a sample retail database representing a fictional food import/export company. It contains transactional data across customers, orders, products, employees, shippers, and product categories.
+
+| Table | Description |
+|---|---|
+| `customers` | Company names, locations, and contact details |
+| `orders` | Order dates, shipping info, and assigned employees |
+| `order_details` | Individual products per order, quantities, and prices |
+| `products` | Product names, unit prices, and categories |
+| `categories` | Product category names and descriptions |
+| `employees` | Sales staff names, titles, and reporting structure |
+| `shippers` | Shipping company names |
+
+---
+
+##  What I Built
+
+- Designed and created the **full database schema** from scratch in SQL Server
+- Loaded all **6 tables** using `BULK INSERT` from CSV files
+- Established **primary keys, foreign keys**, and table relationships
+- Wrote **10 analytical queries** to answer business questions
+
+---
+
+##  Business Questions Answered
+
+| # | Question | SQL Concepts Used |
+|---|---|---|
+| 1 | Which customers have placed the most orders? | `JOIN`, `COUNT`, `GROUP BY`, `ORDER BY` |
+| 2 | What are the top 10 best-selling products by revenue? | `JOIN`, `SUM`, `TOP`, `ORDER BY` |
+| 3 | Which employees handled orders for high-value customers? | Multi-table `JOIN`, `SUM` |
+| 4 | Which customers haven't placed orders in over 90 days? | `JOIN`, `MAX`, `DATEDIFF`, `HAVING` |
+| 5 | Which country generates the most sales? | `JOIN`, `SUM`, `GROUP BY` |
+| 6 | Which product category generates the most revenue? | Multi-table `JOIN`, `SUM` |
+| 7 | Who is the top-performing employee by total sales? | `JOIN`, `SUM`, `ORDER BY` |
+| 8 | What is the average order value per customer? | `JOIN`, `SUM`, `COUNT DISTINCT` |
+| 9 | Which shipping company is used the most? | `JOIN`, `COUNT` |
+| 10 | Which customers have never placed an order? | `LEFT JOIN`, `WHERE IS NULL` |
+
+---
+
+##  Tools Used
+
+- **SQL Server** (SSMS / VS Code)
+- **T-SQL** (Microsoft SQL dialect)
+
+---
+
+##  How to Run This Project
+
+1. Download the Northwind Traders CSV files from [Maven Analytics](https://www.mavenanalytics.io/data-playground)
+2. Open `northwind_analysis.sql` in SSMS or VS Code with the SQL Server extension
+3. **Update the file paths** in each `BULK INSERT` statement to match your local directory
+4. Run the script top to bottom — it will create the database, build all tables, load the data, and execute all 10 queries
+
+---
+
+##  Author
+
+**Collins Amoo**  
+First-Year Data Science Student  
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/YOUR-PROFILE-HERE)
